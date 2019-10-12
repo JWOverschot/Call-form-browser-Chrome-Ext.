@@ -18,6 +18,17 @@
         ],
         "persistent": true
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content_script.js"
+            ]
+        }
+    ],
     "icons": {
         "16": "images/phone_icon16.png",
         "32": "images/phone_icon32.png",
