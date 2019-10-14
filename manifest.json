@@ -1,6 +1,6 @@
 {
     "name": "Call form browser",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Sends call request with the selected number",
     "author": "Jis van Overschot",
     "permissions": [
