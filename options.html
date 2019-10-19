@@ -6,11 +6,15 @@
 
 <body>
     <form id="settings">
-        <label for="protocol">Call protocol (E.g. tell or ucone)</label>
-        <input id="protocol" type="text">
-        <button type="submit" id="save-protocol">Save protocol</button>
+        <label for="protocol">Select Call protocol</label>
+        <select id="protocol">
+            <option value="1" selected>tel</option>
+            <option value="2">ucone</option>
+            <option value="0">other</option>
+        </select>
+        <input id="protocol-other-value" type="text" style="display: none;" placeholder="protocol">
+        <button id="save-protocol" aria-label="save protocol change">Save protocol</button>
     </form>
 </body>
 <script src="options.js"></script>
-
 </html>

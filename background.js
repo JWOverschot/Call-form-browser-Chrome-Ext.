@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(function () {
     let callProtocol = 'tel';
 
     // Set defautl protocol
-    chrome.storage.sync.set({ protocol: callProtocol });
+    chrome.storage.sync.set({ protocol: {index: 1, value: callProtocol }});
 
     function callNumber(info, tab) {
         // Get current set protocol
@@ -13,14 +13,14 @@ chrome.runtime.onInstalled.addListener(function () {
             // Open tab with call request
             if (info.selectionText) {
                 chrome.tabs.create({
-                    url: data.protocol + ": " + info.selectionText
+                    url: data.protocol.value + ": " + info.selectionText
                 });
             } else if (info.linkUrl) {
                 if (info.linkUrl.includes('tel:')) {
                     let phoneNumber = info.linkUrl.split('tel:')[1];
 
                     chrome.tabs.create({
-                        url: data.protocol + ": " + phoneNumber
+                        url: data.protocol.value + ": " + phoneNumber
                     });
                 }
             }
