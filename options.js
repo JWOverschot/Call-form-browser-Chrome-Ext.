@@ -28,16 +28,16 @@ protocolSelect.addEventListener('change', () => {
 saveButton.addEventListener('click', () => {
     // Set protocol
     if (protocolSelect.value == 0) {
-        chrome.storage.sync.set({ protocol: { index: protocolSelect.value, value: otherValue.value }});
+        chrome.storage.sync.set({ protocol: { index: protocolSelect.value, value: otherValue.value.toLocaleLowerCase() }});
     } else {
-        chrome.storage.sync.set({ protocol: { index: protocolSelect.value, value: protocolSelect.text }});
+        chrome.storage.sync.set({ protocol: { index: protocolSelect.value, value: protocolSelect.selectedOptions[0].text }});
     }
 });
 
 // Show and hide input field for other option in select
 function showOtherInput() {
     if (protocolSelect.value == 0) {
-        otherValue.style.display = 'initial';
+        otherValue.style.display = 'inherit';
     } else {
         otherValue.style.display = 'none';
     }

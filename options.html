@@ -2,19 +2,25 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="./options.css">
 </head>
 
 <body>
     <form id="settings">
-        <label for="protocol">Select Call protocol</label>
-        <select id="protocol">
-            <option value="1" selected>tel</option>
-            <option value="2">ucone</option>
-            <option value="0">other</option>
-        </select>
-        <input id="protocol-other-value" type="text" style="display: none;" placeholder="protocol">
-        <button id="save-protocol" aria-label="save protocol change">Save protocol</button>
+        <fieldset class="inputs">
+            <legend>Select Call protocol</legend>
+            <select id="protocol">
+                <option value="1" selected>tel</option>
+                <option value="2">ucone</option>
+                <option value="0">other</option>
+            </select>
+            <input id="protocol-other-value" type="text" style="display: none;" placeholder="protocol">
+        </fieldset>
+        <div class="flex-aling">
+            <button id="save-protocol" aria-label="save protocol change">Save protocol</button>
+        </div>
     </form>
 </body>
 <script src="options.js"></script>
+
 </html>
