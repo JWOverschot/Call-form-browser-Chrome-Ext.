@@ -1,6 +1,6 @@
 {
     "name": "Call form browser",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "description": "Sends call request with the selected number",
     "author": "Jis van Overschot",
     "permissions": [
@@ -9,9 +9,6 @@
         "<all_urls>"
     ],
     "options_page": "options.html",
-    "options_ui": {
-        "page": "options.html"
-    },
     "background": {
         "scripts": [
             "background.js"
