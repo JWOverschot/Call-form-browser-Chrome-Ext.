@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form#settings {
+    margin: 20px 10px;
+    display: inline-block;
+    width: calc(100% - 20px);
+}
+
+.inputs {
+    border: #00b4e4 2px solid;
+    border-radius: 4px;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+.inputs legend {
+    font-weight: bold;
+    display: block;
+    color: #00576e;
+}
+
+select#protocol,
+button#save-protocol,
+input#protocol-other-value {
+    background: #00b4e4;
+    border: #00b4e4 solid 2px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+input#protocol-other-value {
+    display: block;
+}
+
+input::placeholder {
+    color: #00576e;
+}
+
+.flex-aling {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;
+}
+
+button#save-protocol {
+    padding: 10px;
+    transition-property: background;
+    transition-duration: 200ms;
+    cursor: pointer;
+    margin: 10px 2px;
+    display: block;
+}
+
+button#save-protocol:hover,
+button#save-protocol:active,
+select#protocol:active,
+select#protocol:focus {
+    background: white;
+    color: #00576e;
+}
