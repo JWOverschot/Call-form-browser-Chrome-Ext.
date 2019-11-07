@@ -1,4 +1,4 @@
-# Call-form-browser-Chrome-Ext.
+# Call-from-browser-Chrome-Ext.
 A Chrome extension to call from the browser
 
 ## How to use
