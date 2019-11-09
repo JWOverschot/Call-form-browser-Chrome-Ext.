@@ -3,6 +3,7 @@
     "version": "1.0.1",
     "description": "Sends call request with the selected number",
     "author": "Jis van Overschot",
+    "minimum_chrome_version": "79.0.3945.29",
     "permissions": [
         "contextMenus",
         "storage",
